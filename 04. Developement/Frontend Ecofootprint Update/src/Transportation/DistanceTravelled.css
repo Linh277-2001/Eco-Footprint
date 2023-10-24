@@ -1,0 +1,181 @@
+body,
+html {
+    background-color: #8dc1cb;
+    height: 100%;
+}
+
+#root {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.container3 {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #ffe4d3, #f8f3de);
+    display: flex;
+    flex-direction: column;
+}
+.sub_title2{
+    color: #2c3e50;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 34px;
+}
+.value_kms {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 34px;
+}
+.title_kms{
+    color: #2c3e50;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 34px;
+    margin-top: -20px;
+}
+.Man {
+    margin-bottom: 50px;
+}
+
+.houseMenberImg {
+    order: 999;
+}
+
+.logo2 {
+    padding-top: 15px;
+    padding-left: 15px;
+    width: 140px;
+}
+
+.cld1 {
+    width: 104px;
+    height: 48px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    animation-name: move1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move1 {
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+
+    50% {
+        top: 0px;
+        left: 50px;
+    }
+
+    100% {
+        top: 0px;
+        left: 0px;
+    }
+}
+
+
+.cld2 {
+    width: 150px;
+    height: 60px;
+    float: right;
+    position: relative;
+    top: 100px;
+    right: 100px;
+    animation-name: move2;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+.cld3 {
+    width: 200px;
+    height: auto;
+    float: center;
+    position: relative;
+    top: 100px;
+    right: 100px;
+    animation-name: move3;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move3 {
+    0% {
+        top: 100px;
+        left: 0px;
+    }
+
+    50% {
+        top: 100px;
+        left: 30px;
+    }
+
+    100% {
+        top: 100px;
+        left: 0px;
+    }
+}
+
+.cloud-container {
+    overflow: hidden;
+}
+
+@keyframes move2 {
+    0% {
+        top: 100px;
+        right: 0px;
+    }
+
+    50% {
+        top: 100px;
+        right: 10px;
+    }
+
+    100% {
+        top: 100px;
+        right: 0px;
+    }
+}
+
+.content2 {
+    margin-top: -4%;
+    padding-right: 20%;
+    padding-left: 20%;
+    text-align: center;
+}
+
+.caption2 {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.title2 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+.leftIcon{
+    float: left;
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+  }
+  .rightIcon{
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+  }
+  .leftIcon:hover{
+    transform: scale(1.1);
+  }
+  .rightIcon:hover{
+    transform: scale(1.1);
+  }

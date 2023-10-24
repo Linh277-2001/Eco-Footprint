@@ -1,0 +1,223 @@
+body, html {
+  background-color: #8dc1cb;
+  height: 100%; 
+}
+
+#root{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.container5 {
+  width: 100%;
+  height: 100%;
+  background:linear-gradient(180deg, #c9e2dc, #f6f1d3);
+  display: flex;
+  flex-direction: column;
+}
+p , a, h1 , h2 {
+  color: #2c3e50;
+  margin: 0;
+  padding: 0;
+}
+
+.houseImg {
+  margin-top: -40px;
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  padding-top: 15px;
+  padding-left: 15px;
+  width: 140px;
+}
+/* Ma */
+ .App {
+  text-align: center;
+} 
+
+ .App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+button {
+  background-color: #61dafb;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 35%;
+} 
+
+ input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: #8dc1cb;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #3182c2;
+}
+
+button[type="submit"]:focus {
+  outline: none;
+} 
+
+.cloud1 {
+  width: 104px;
+  height: 48px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  animation-name: move;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+
+  50% {
+    top: 0px;
+    left: 50px;
+  }
+
+  100% {
+    top: 0px;
+    left: 0px;
+  }
+}
+
+
+.cloud2 {
+  width: 150px;
+  height: 60px;
+  float: right;
+  position: relative;
+  top: 100px;
+  right: 100px;
+  animation-name: move2;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+
+.cloud-container {
+  overflow: hidden;
+}
+
+@keyframes move2 {
+  0% {
+    top: 100px;
+    right: 0px;
+  }
+
+  50% {
+    top: 100px;
+    right: 10px;
+  }
+
+  100% {
+    top: 100px;
+    right: 0px;
+  }
+}
+
+.content {
+  margin-top: -5%;
+  padding-right: 20%;
+  padding-left: 20%;
+  text-align: center;
+}
+
+.caption {
+  font-family: Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.add_details{
+  font-family: Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.quantity{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.quantity .ant-row {
+  height: 100%;
+}
+.sub_title{
+  font-family: Arial,sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 32px;
+    /* letter-spacing: 1.75px; */
+    text-transform: uppercase;
+}
+.title{
+  font-family: Arial,sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 48px;
+  /* letter-spacing: 1.75px; */
+  text-transform: uppercase;
+}
+.register {
+  float: right;
+  background-color: #8dc1cb;
+  border: none;
+}
+
+.register:hover {
+  background-color: #3182c2;
+}
+
+.register:focus {
+  outline: none;
+} 

@@ -1,0 +1,234 @@
+.radial-gradient {
+    background-image: radial-gradient(circle at 50% 47%, #357a7d, #1c405f);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.head_result{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem
+}
+
+.cta{
+    position: relative;
+    height: auto;
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .2);
+    border: none;
+    color: #fff;
+    overflow: hidden;
+}
+.cta-hvr::before {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.3s ease-in-out;
+}
+.cta a:hover {
+    color: #fff;
+    /* Màu đen cho chữ khi hover */
+}
+.cta-hvr:hover::before {
+    transform: scaleX(1);
+}
+.cta-hvr {
+    overflow-x: clip;
+}
+.cta-big {
+    min-width: 25rem;
+    margin: 1.5rem 0;
+}
+.cta-big a {
+    font-size: 2.8rem;
+    text-transform: capitalize;
+    color: #fff;
+    
+}
+.cta a {
+    display: block;
+    font-size: 1.8rem;
+    line-height: 1.33;
+    background-image: radial-gradient(circle, #ff9b1a 0, #ff9000 50%);
+    letter-spacing: 1.4px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+}
+.ctb a {
+    background-image: radial-gradient(circle, hsla(0, 0%, 100%, .4) 0, hsla(0, 0%, 100%, .3) 100%)!important;
+}
+a {
+    cursor: pointer;
+    background-color: initial;
+}
+
+.container-content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    min-height: calc(100vh - 19rem);
+    text-align: center;
+    z-index: 10;
+    padding-bottom: 15vh;
+    overflow-x: hidden;
+    padding: 3rem 0;
+}
+.main-title{
+    font-size: 55px;
+    letter-spacing: 0.4px;
+    line-height: 49.5px;
+    font-weight: 400;
+    z-index: 1;
+    margin: 1rem 0;
+    color: #fff;
+}
+.globe{
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    margin: 1.5rem 0.5rem;
+    width: 10rem;
+    margin-right: -50px;
+}
+.globe img {
+    width: 100px;
+    height: 98px;
+}
+.globe-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 60rem;
+    animation-delay: 1s;
+    animation-name: fadeInDown;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+}
+.content7{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.container7{
+    max-width: 1140px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.caption{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+}
+.sub-title{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    color: aliceblue    ;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+.result_layout {
+    background-position: 50%, top;
+    background-size: 100%, 100%;
+    background-repeat: repeat, no-repeat;
+}
+.result_planets {
+    background-position: 50%, top;
+    background-size: 100%, 100%;
+    background-repeat:repeat, no-repeat;
+}
+.comet-01,
+.comet-03,
+.comet-04,
+.comet-06 {
+    width: 5vmin;
+}
+
+.comet-02,
+.comet-05 {
+    width: 8vmin;
+}
+.result_planets {
+    background-position: 50% top;
+    background-size: 100% 100%;
+    background-repeat: repeat, no-repeat;
+}
+
+.comet-instance {
+    height: auto;
+    left: -10vw;
+    top: -10vh;
+    transform: scaleX(-1);
+    fill: #fff;
+    animation: MakeItRain 12s infinite;
+    opacity: 0;
+    position: absolute;
+}
+
+.comet-instance.comet-05 {
+    top: 34vh;
+    animation-delay: 5s;
+}
+
+.comet-instance.comet-06 {
+    top: 67vh;
+    animation-delay: 14s;
+}
+
+.comet-instance.comet-01 {
+    left: 30vw;
+    animation-delay: 0ms;
+}
+
+.comet-instance.comet-03 {
+    left: 83vw;
+    animation-delay: 6s;
+}
+
+.comet-instance.comet-02 {
+    left: 57vw;
+    animation-delay: 9s;
+}
+
+.comet-instance.comet-04 {
+    top: 13vh;
+    animation-delay: 22s;
+}
+
+@keyframes MakeItRain {
+    0% {
+        opacity: 0;
+        transform: scaleX(-1) translate(0);
+    }
+
+    70% {
+        opacity: 0.4;
+        transform: scaleX(-1) translate(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scaleX(-1) translate(-111vw, 111vmax);
+    }
+}

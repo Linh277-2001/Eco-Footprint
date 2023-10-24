@@ -1,0 +1,60 @@
+.profile-content {
+    width: 25%;
+    height: auto; 
+    margin: auto;
+    border: 1px solid #ccc; 
+    background-color: #fff;
+    border-radius: 5px;
+  }
+.Content1 {
+  width: 100%;
+  margin-top: 25px;
+  border-radius: 5px;
+}
+
+.Content2 {
+  display: flex;
+  /* z-index: 1; */
+  align-items: center;
+  width: 90%;
+  padding-left: 20px;
+}
+
+.chart-container {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.profile-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Đối tượng avatar và thông tin cá nhân */
+.profile-page .ant-avatar {
+  margin-bottom: 10px;
+}
+
+.profile-page h4 {
+  margin: 5px 0;
+}
+
+/* Đối tượng nút Edit Profile */
+.profile-page .ant-btn {
+  margin-top: 10px;
+}
+
+/* Đối tượng modal */
+.profile-page .ant-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.activity-container{
+  width: 100%;
+  margin-top: 10px;
+}
